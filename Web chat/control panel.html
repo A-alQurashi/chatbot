@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="an">
+    <head>
+        <meta charset="UTF-8">
+    
+        <link rel="stylesheet" href="style.css">
+        <title>Control Panel</title>
+
+    </head>
+    <h1>Control Panel</h1>
+    <a herf ="dir.php"></a>
+    <form action="dir.php" method="post" autocomplete ='of'class='form'>
+    <button type="submit" class="button">
+        <span class="button__text">Forward</span>
+        <span class="button__icon">
+            <ion-icon name="arrow-up-outline"></ion-icon>
+        </span>
+      </button>
+      <button type="submit2" class="button">
+        <span class="button__text">Left</span>
+        <span class="button__icon">
+            <ion-icon name="arrow-back-outline"></ion-icon>
+        </span>
+      </button>
+      <button type="submit" class="button">
+        <span class="button__text">Right</span>
+        <span class="button__icon">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+        </span>
+      </button>
+      <button type="submit" class="button">
+        <span class="button__text">Backward</span>
+        <span class="button__icon">
+            <ion-icon name="arrow-down-outline"></ion-icon>
+        </span>
+      </button> 
+      <button type="submit" class="button">
+        <span class="button__text">Stop</span>
+        <span class="button__icon">
+            <ion-icon name="stop-circle-outline"></ion-icon>
+        </span>
+      </button>
+   
+      
+    </form>
+   
+
+      <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+      <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "078e1c92-b206-44d9-8374-d81d88740800", // The ID of this integration.
+            region: "eu-gb", // The region your integration is hosted in.
+            serviceInstanceID: "e51e614a-2561-4dcc-92c3-149fc5c2ca27", // The ID of your service instance.
+            onLoad: function(instance) { instance.render(); }
+          };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</html>
